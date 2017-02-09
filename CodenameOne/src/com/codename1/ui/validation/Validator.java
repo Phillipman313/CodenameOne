@@ -491,6 +491,15 @@ public class Validator {
     /**
      * Validates and highlights an individual component
      * @param cmp the component to validate
+     * @param value true to highlight otherwise false
+     */
+    public void validate(Component cmp, boolean value) {
+        setValid(cmp, value);
+    }
+    
+    /**
+     * Validates and highlights an individual component
+     * @param cmp the component to validate
      */
     protected void validate(Component cmp) {
         Object val = getComponentValue(cmp);
