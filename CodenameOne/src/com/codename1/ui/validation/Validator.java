@@ -394,6 +394,9 @@ public class Validator {
         if(cmp instanceof Label) {
             return ((Label)cmp).getText();
         }
+        if(cmp instanceof Slider) {
+            return ((Slider)cmp).getProgress();
+        }
         if(cmp instanceof List) {
             return ((List)cmp).getSelectedItem();
         }
